@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="content-section">
+        <h2>You can join us and make an account here by filling this form:</h2>
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                {{ form.username.label(class="form-control-label") }}
+                {% if form.username.errors %}
+                    {{ form.username(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.username.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.username(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <small class="text-muted">
+                Username needs to be 4 to 20 marks long.
+            </small>
+            <p></p>
+            <div class="form-group">
+                {{ form.password1.label(class="form-control-label") }}
+                {% if form.password1.errors %}
+                    {{ form.password1(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.password1.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.password1(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <small class="text-muted">
+                Password needs to be 5 to 20 marks long.
+            </small>
+            <p></p>
+            <div class="form-group">
+                {{ form.password2.label(class="form-control-label") }}
+                {% if form.password2.errors %}
+                    {{ form.password2(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.password2.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.password2(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <p></p>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+        </form>
+    </div>
+    <p></p>
+        <small class="text-muted">
+            You have an account and you wanna sign in? You can do that <a class="ml-2" href="{{ url_for('login') }}">here</a>
+        </small>
+    </div>
+{% endblock content %}
