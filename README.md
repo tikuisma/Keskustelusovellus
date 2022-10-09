@@ -3,7 +3,7 @@
 Sovelluksen tarkoituksena on olla keskustelufoorumi, jossa on erilaisiin aiheisiin liittyviä viestiketjuja. Pääsivulla olisi tarkoitus olla ennalta annetut aihekokonaisuudet, kuten mm. Harrastukset, Kulttuuri, Lemmikit, Ruoka ja juoma, Terveys ja Viihde. Käyttäjän valittua jokin aihekokonaisuuksista, siirrytään tämän aihekokonaisuuden sisälle, jossa ovat käyttäjien luomat viestiketjut. Näitä viestiketjuja käyttäjät pääsevät sitten kommentoimaan tai halutessaan luomaan uusia.
 
 ## Sovelluksen nykystatus
-Sovellus on todella pahasti kesken, sen vuoksi en siirtänyt projektia edes Herokuun. Tietokannan kanssa on sen verran ongelmia, että pitää vielä pyöritellä miten sen saa toimimaan, koodi on samassa paikassa --> pitää erotella jne.
+Sovellus on edelleen kesken, projekti toimii paikallisesti. Herokussa se ei jostain syystä pyöri oikein ja tunnista muita sivuja. Herokussa tulee jostain syystä jokin tietokantavirhe.
 
 ## Käyttäjän luonti ja sisäänkirjautuminen
 Ensin tulee luoda tunnus ja tälle salasana sekä valita missä roolissa ohjelmaa käytetään, käyttäjänä vai ylläpitäjänä.
