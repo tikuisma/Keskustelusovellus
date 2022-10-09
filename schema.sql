@@ -18,6 +18,6 @@ CREATE TABLE threads (
 CREATE TABLE messages (
     id SERIAL PRIMARY KEY,
     thread_id INTEGER REFERENCES threads,
-    user_id INTEGER REFERENCES users1
+    user_id INTEGER REFERENCES users1,
     message TEXT
 )
