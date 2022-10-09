@@ -1,6 +1,6 @@
 # Keskustelusovellus
 
-Sovellus Herokussa [https://tsoha-visitors1.herokuapp.com/login]
+Sovellus [Herokussa](https://tsoha-visitors1.herokuapp.com/login)
 
 Sovelluksen tarkoituksena on olla keskustelufoorumi, jossa on erilaisiin aiheisiin liittyviä viestiketjuja. Pääsivulla olisi tarkoitus olla ennalta annetut aihekokonaisuudet, kuten mm. Harrastukset, Kulttuuri, Lemmikit, Ruoka ja juoma, Terveys ja Viihde. Käyttäjän valittua jokin aihekokonaisuuksista, siirrytään tämän aihekokonaisuuden sisälle, jossa ovat käyttäjien luomat viestiketjut. Näitä viestiketjuja käyttäjät pääsevät sitten kommentoimaan tai halutessaan luomaan uusia.
 
