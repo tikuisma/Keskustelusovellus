@@ -1,9 +1,11 @@
 # Keskustelusovellus
 
+Sovellus Herokussa [https://tsoha-visitors1.herokuapp.com/login]
+
 Sovelluksen tarkoituksena on olla keskustelufoorumi, jossa on erilaisiin aiheisiin liittyviä viestiketjuja. Pääsivulla olisi tarkoitus olla ennalta annetut aihekokonaisuudet, kuten mm. Harrastukset, Kulttuuri, Lemmikit, Ruoka ja juoma, Terveys ja Viihde. Käyttäjän valittua jokin aihekokonaisuuksista, siirrytään tämän aihekokonaisuuden sisälle, jossa ovat käyttäjien luomat viestiketjut. Näitä viestiketjuja käyttäjät pääsevät sitten kommentoimaan tai halutessaan luomaan uusia.
 
 ## Sovelluksen nykystatus
-Sovellus on edelleen kesken, projekti toimii paikallisesti. Herokussa se ei jostain syystä pyöri oikein ja tunnista muita sivuja. Herokussa tulee jostain syystä jokin tietokantavirhe.
+Sovellus on edelleen kesken, projekti toimii myös Herokussa. Tietokannan pitäisi tallentaa ainoastaan vasta uudet käyttäjät. Paljon tekemistä vielä vikalle parille viikolle.
 
 ## Käyttäjän luonti ja sisäänkirjautuminen
 Ensin tulee luoda tunnus ja tälle salasana sekä valita missä roolissa ohjelmaa käytetään, käyttäjänä vai ylläpitäjänä.
