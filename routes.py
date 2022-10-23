@@ -25,6 +25,8 @@ def login():
         if users.login(username, password):
             flash("Your login was made successfully.")
             return redirect(url_for("home"))
+        else:
+            flash("Please check your username and password.")
     return render_template("login.html", title="Login", form=form)
 
 @app.route("/home")
