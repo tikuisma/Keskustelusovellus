@@ -3,7 +3,7 @@
 Sovellus [Herokussa](https://tsoha-visitors1.herokuapp.com/login)
 
 Sovelluksen tarkoituksena on olla keskustelufoorumi, jossa on erilaisiin aiheisiin liittyviä viestiketjuja. Pääsivulla on ylläpitäjien luomat teemat, kuten mm. Harrastukset, Kulttuuri, Lemmikit, Ruoka ja juoma, Terveys ja Viihde. Käyttäjän valittua jonkin aihekokonaisuuksista, siirrytään tämän aihekokonaisuuden sisälle. Aihekokonaisuuden sisältä löytyy käyttäjien julkaisemat postaukset. Näitä postauksia/viestiketjuja käyttäjät pääsevät sitten kommentoimaan tai halutessaan luomaan itse uusia.
-Sovellus on toteutettu englannin kielisenä.
+Sovellus on toteutettu englanninkielisenä.
 
 ## Käyttäjän luonti ja sisäänkirjautuminen
 Ensin Herokussa tulee luoda käyttäjätunnus ja tälle salasana sekä valita missä roolissa ohjelmaa käytetään, käyttäjänä vai ylläpitäjänä.
