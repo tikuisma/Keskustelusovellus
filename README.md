@@ -1,4 +1,4 @@
-# Keskustelusovellus
+# Keskustelusovellus - Social platform
 
 Sovellus [Herokussa](https://tsoha-visitors1.herokuapp.com/login)
 
