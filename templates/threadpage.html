@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>Theme: {{ title }}</h2><br>
+    <a href="/home">Go back</a>
+    <br><br>
+    {% if session.user_role == 1 or session.user_role == 2 %}
+        <p>If you wanna make a post, you can make it <a href="/theme/{{ title }}/new_post">here</a></p>
+    <tr>
+    {% endif %}
+    <br>
+    <h3>Here you can find all the posts that where made to this theme.
+        You can go visit and comment on them!
+    </h3>
+    <ul>
+    {% if threadlist %}
+    {% for col in threadlist %}
+        <li><a href="/theme/{{ title }}/{{ col[0] }}">{{ col[1] }}</a>
+            {% if session.user_role == 2 %}
+            <a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="/theme/{{ title }}/{{ col[0] }}/remove">Remove thread</a>
+            {% endif %}
+        {% endfor %}
+    {% else %}
+    <p>No threads found. You can create first thread by making a new post!</p>
+    {% endif %}
+    </ul>
+    </tr>
+{% endblock content %}

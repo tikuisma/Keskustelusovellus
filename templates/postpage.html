@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Welcome to chat about {{ title }}!</h2>
+{% if user_like == False and session.user_id %}
+<p> You can like this post by hitting <a href="/theme/{{ themename }}/{{ thread_id }}/like">Like</a></p>
+{% endif %}
+<i><p>This post has {{ like_count[0] }} likes.</p></i>
+{% for col in messagelist %}
+    <p>{{ col[1] }}</p>
+    <br>
+    <p>Posted by: {{ col[2] }}</p>
+    {% if session.user_role == 2 %}
+    <a href="/theme/{{ themename }}/{{ thread_id }}/{{ col[0] }}/remove">Remove comment</a>
+    {% endif %}
+    <p>________________________________________________</p>
+{% endfor %}
+{% if session.user_role == 1 or session.user_role == 2 %}
+<form action="" method="POST">
+    <label for="comment">You can write your comment here:</label><br>
+    <textarea placeholder="Write your comment here" name="message" rows="10" cols="180"></textarea>
+    <p></p>
+    <input type="submit" value="Publish comment">
+
+    <input type="hidden" name="csrf_token" value="{{ session.csrf_token }}">
+</form>
+{% endif %}
+<p></p>
+<a href="/theme/{{ themename }}">Go back</a>
+{% endblock content %}

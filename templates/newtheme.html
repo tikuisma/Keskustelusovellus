@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>You can create new theme in here</h2><br>
+<form action="/new_theme" method="POST">
+    <label for="theme">Insert theme name:</label><br>
+    <input type="text" id="themename" name="themename" size="50"><br>
+    <p></p>
+    <input type="submit" value="Create theme">
+
+    <input type="hidden" name="csrf_token" value="{{ session.csrf_token }}">
+</form>
+<br>
+<a href="/home">Go back</a>
+{% endblock content %}

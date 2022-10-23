@@ -1,9 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
-<h1>Social platform</h1>
-<p>
-</p>
-<h2>You can sign in here:</h2>
+<h2>You can log in here:</h2>
 <p></p>
     <div class="content-section">
         <form method="POST" action="">
@@ -43,7 +40,7 @@
         </form>
         </div>
         <small class="text-muted">
-            Don't have an account yet? You can make it <a class="ml-2" href="{{ url_for('registration') }}">here</a>
+            <p>Don't have an account yet? You can make it <a class="ml-2" href="{{ url_for('registration') }}">here</a></p>
         </small>
     </div>
 {% endblock content %}

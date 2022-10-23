@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>Create new post to: {{ themename }}</h2><br>
+    <form action="" method="POST">
+        <label for="thread">Type your posts headline:</label><br>
+        <input type="text" id="threadname" name="threadname" size="50"><br>
+        <br>
+        <textarea placeholder="Write your post here" name="message" rows="10" cols="180"></textarea>
+        <br>
+        <input type="submit" value="Publish post">
+
+        <input type="hidden" name="csrf_token" value="{{ session.csrf_token }}">
+    </form>
+    <p></p>
+    <a href="/theme/{{ themename }}">Go back</a>
+{% endblock content %}
